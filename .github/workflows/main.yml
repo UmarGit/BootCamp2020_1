@@ -24,7 +24,7 @@ jobs:
     - name: Building Application For Production
       run: yarn build
 
-    - name: Initializing Surge and Deploying
+    - name: Initializing Surge and Deploying !
       run: npm install --global surge
     - run: echo "==>> ${{ secrets.SUPER_SECRET_SURGE_TOKEN }}"
     - run: surge ./build BootCamp2020_UmarGit_1.surge.sh --token ${{ secrets.SUPER_SECRET_SURGE_TOKEN }}
