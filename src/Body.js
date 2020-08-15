@@ -6,7 +6,7 @@ function Body(props) {
         <h1>{props.content1}</h1>
         <br/>
         <br/>
-        {props.content2} 😍
+        {props.content2} <span role="img" aria-label="emoji">😍</span>
     </main>
   );
 }
