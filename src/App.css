@@ -43,3 +43,8 @@ footer {
   padding: var(--footerPadding);
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  main {
+    display: block;
+  }
+}
