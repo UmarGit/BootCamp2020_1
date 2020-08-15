@@ -1,12 +1,15 @@
 import React from 'react';
+import Content from './Content';
 
 function Body(props) {
   return (
     <main className="Body">
-        <h1>{props.content1}</h1>
+        <Content content="React is a JavaScript library for building user interfaces and I love React !"/>
+        <Content content="React is Declarative"/>
+        <Content content="React is Component-Based"/>
+        <Content content="React is Learn Once, Write Anywhere"/>
         <br/>
-        <br/>
-        {props.content2} <span role="img" aria-label="emoji">😍</span>
+        {props.caption} <span role="img" aria-label="emoji">😍</span>
     </main>
   );
 }
